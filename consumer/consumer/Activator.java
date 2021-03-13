@@ -10,8 +10,6 @@ import org.osgi.framework.ServiceReference;
 import org.osgi.util.tracker.ServiceTracker;
 
 public class Activator implements BundleActivator, ServiceListener {
-
-	
 	
 	private BundleContext fContext;
 
