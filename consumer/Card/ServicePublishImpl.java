@@ -1,4 +1,4 @@
-package com.mtit.service;
+package Card;
 
 import java.util.Scanner;
 

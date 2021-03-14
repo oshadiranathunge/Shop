@@ -1,10 +1,12 @@
-package com.mtit.service;
+package cash;
 
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.ServiceRegistration;
 
-public class ServiceActivator implements BundleActivator {
+import Card.ServicePublish;
+
+public class CashActivator implements BundleActivator {
 
 	ServiceRegistration publishServiceRegistration;
 	
@@ -12,7 +14,7 @@ public class ServiceActivator implements BundleActivator {
 	public void start(BundleContext context) throws Exception {
 		
 		System.out.println("Card Service Provider has Started!!!");
-		ServicePublish publisherService = new ServicePublishImpl();
+		ServicePublish publisherService = new CashPublishImpl();
 		
 		publishServiceRegistration = context.registerService(ServicePublish.class.getName(), publisherService, null); 
 	

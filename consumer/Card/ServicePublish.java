@@ -1,4 +1,4 @@
-package com.mtit.service;
+package Card;
 
 public interface ServicePublish {
 
