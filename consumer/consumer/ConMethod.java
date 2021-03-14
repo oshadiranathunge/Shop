@@ -8,8 +8,6 @@ import consumer.Activator;
 import discount.DiscountInterface;
 import Card.ServicePublish;
 import cash.CashPublishImpl;
-//import reloadservice.Reload_Interface;
-//import travelservice.Travel_Interface;
 
 public class ConMethod {
 	public static  List<Object> stringlist=new ArrayList<Object>();
@@ -68,11 +66,7 @@ public class ConMethod {
 					
 					u1.setPayment(card.cashMenu());
 					
-					//u1.setPayment(gas.size_small);
 					
-					//stringlist.add(u1.getPayment());
-					
-					//TotalPrice += gas.Payment(size);
 				}
 				else if(size == 2) {
 					System.out.println("Your selection for Master is successful ");							
@@ -80,18 +74,13 @@ public class ConMethod {
 					
 					total+=card.cashMenu();
 					
-					//u1.setPayment(gas.size_medium);
 					
-					//stringlist.add(u1.getPayment());
-					
-					//TotalPrice += gas.Payment(size);
 				}			
 				
 				else 
 					System.out.println("Unexpected error! Please try again");
 				   
-					//u1.setPayment(total);
-					//stringlist.add(u1.getPayment());			
+							
 				
 					total=0;
 					System.out.println("Do you want to continue? 'yes' for YES \n 'no' for NO");
@@ -112,9 +101,6 @@ public class ConMethod {
 			
 			stringlist.clear();
 			
-			//u1.setPayment(TotalPrice);
-
-			//TotalInvoicelist.add(u1.getPayment());
 			TotalPrice=0;
 		}
 
@@ -142,7 +128,7 @@ public class ConMethod {
 					discount.PrintNumber(number);
 					
 					Scanner scan3 = new Scanner(System.in);	
-					System.out.printf("Enter the amount to be reloaded ");
+					System.out.println(discount);
 					int amount = scan3.nextInt();				
 					
 					total += amount;
@@ -164,13 +150,13 @@ public class ConMethod {
 				while(user_option.equals("yes")); 
 				
 				System.out.println("*******************************************************");
-				System.out.println("                 RELOAD BILL                           ");
+				System.out.println("                 DISCOUNT                           ");
 				System.out.println("*******************************************************");
 		
 				System.out.println("-------------------------------------------------------");   
 				System.out.println("   	Total bill: " +TotalPrice);
 				System.out.println("*******************************************************");
-				System.out.println("        Thank you & Have nice day..!                   ");
+				System.out.println("        Thank you & See you again..!                   ");
 				
 				stringlist.clear();
 			     
@@ -192,35 +178,39 @@ public class ConMethod {
 			Scanner s1 = new Scanner(System.in);  // Create a Scanner object
 			cash.cashEntry();
 		    System.out.printf("Enter the count : ");
-		    String vehicleType = s1.nextLine();  
 		    
-			/*enter the distance
-		    System.out.println("select the travel range");
-			Scanner s2=new Scanner(System.in);
-			travel.ListPrice();
-			int option = s2.nextInt();*/
 			
 			String user_option="yes";
 			
 			int total=0;
 			
-			/*do {
+			do {
 				Scanner s3=new Scanner(System.in);
-				System.out.printf("Enter the distance: ");
-				int dis=s3.nextInt();
+				System.out.printf("Enter the cash: ");
+				//no of cash
+				int y=s3.nextInt();
 				
-				if(dis == 1) {
-					total=travel.Payment(option)*dis;
+				if(y == 1) {
+					total=cash.Payment(user_option)*y;
 					TotalPrice=total;
 				}
-				else if(dis >1 && dis<5) {
-					total=travel.Payment(option)*dis;
+				else if(y == 1000) {
+					total=cash.Payment(user_option)*y;
 					TotalPrice=total;
 				}
-				else if(dis >5) {
-					total=travel.Payment(option)*dis;
+				else if(y == 500) {
+					total=cash.Payment(user_option)*y;
 					TotalPrice=total;
-				}else 
+					
+				}else if(y == 100) {
+					total=cash.Payment(user_option)*y;
+					TotalPrice=total;
+					
+				}else if(y == 50) {
+					total=cash.Payment(user_option)*y;
+					TotalPrice=total;
+				}
+				else 
 					System.out.println("Unexpected error! Please try again");
 				
 					u3.setPayment(total);
@@ -233,9 +223,9 @@ public class ConMethod {
 				
 				
 				
-			}*/while(user_option.equals("yes")); 
+			}while(user_option.equals("yes")); 
 			
-			//printing the bill for transport service
+			//printing the bill for cash service
 			System.out.println("*******************************************************");
 			System.out.println("                 Cash BILL                        ");
 			System.out.println("*******************************************************");
