@@ -13,7 +13,7 @@ import cash.CashPublish;
 import cash.CashPublishImpl;
 import consumer.ConMethod;
 import discount.DiscountInterface;
-//import travelservice.Travel_Interface;
+
 
 public class Activator implements BundleActivator, ServiceListener {
 	ServiceReference serviceReferance;
@@ -27,9 +27,9 @@ public class Activator implements BundleActivator, ServiceListener {
 	@Override
 	public void start(BundleContext context) throws Exception {
 		Activator.context = context;
-		System.out.println("Consumer bundule started.");
+		System.out.println("Consumer bundule has started.");
 		this.ConMethod();
-		System.out.println("Consumer service started.");
+		System.out.println("Consumer service has started.");
 		
 	}
 
@@ -81,7 +81,7 @@ public class Activator implements BundleActivator, ServiceListener {
 
 	@Override
 	public void serviceChanged(ServiceEvent arg0) {
-		// TODO Auto-generated method stub
+		
 		
 	}
 
