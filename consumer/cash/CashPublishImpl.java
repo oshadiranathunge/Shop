@@ -43,7 +43,7 @@ public class CashPublishImpl implements ServicePublish{
 					pp2 = scn.nextLine();
 
 					if (pp2 == "n") {
-						System.out.println("Thank you for visiting us.");
+						System.out.println("Thank you for visiting us! Come again!");
 
 					}
 
@@ -55,12 +55,10 @@ public class CashPublishImpl implements ServicePublish{
 
 		@Override
 		public int cashMenu() {
-			// TODO Auto-generated method stub
 			return 0;
 		}
 
 		public int Payment(String user_option) {
-			// TODO Auto-generated method stub
 			return 0;
 		}
 
