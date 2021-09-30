@@ -36,10 +36,12 @@ public class ConMethod {
 			   return 0;
 		}
 
-		//method to access gas service
+		//method to access gas service via Activator
 		public static void Card(ServicePublish card) {
 			Scanner myObj = new Scanner(System.in);  // Create a Scanner object
-		    System.out.println("Select the type of card\n1. Visa\n2. Master");
+		    System.out.println("Select the type of card\n1. Visa\n2. Master \n3. Cre
+C:\Users\Oshadi\Desktop\intern\GSB\GSB new\katalon-gsb-ui\Energy_facebook_client\MMS Data.csv
+dit");
 		    System.out.printf("Enter the number : ");
 		    String cardType = myObj.nextLine();  
 		    
