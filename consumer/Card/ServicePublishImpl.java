@@ -29,7 +29,7 @@ public class ServicePublishImpl implements ServicePublish{
 		
 		if(number>2) {
 			
-			System.out.println("Invalid Input!!!!!");
+			System.out.println("Invalid Input! Please try again!");
 		}
 		
 		return 0;
