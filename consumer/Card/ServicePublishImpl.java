@@ -19,12 +19,12 @@ public class ServicePublishImpl implements ServicePublish{
 
 		if(number == 1) {
 			
-			System.out.println("You have selected Visa Card");
+			System.out.println("Visa Card has been selected");
 		}
 		
 		if(number == 2) {
 			
-			System.out.println("You have selected Master card");
+			System.out.println("Master card has been selected");
 		}
 		
 		if(number>2) {
